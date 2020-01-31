@@ -1,14 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {FlatTreeControl} from '@angular/cdk/tree';
-import {FlatTreeNode, TREE_DATA, TreeNode, TreeNodeHasChildren, TreeNodeTransformer} from './tree-data';
+import {FlatTreeNode, TREE_DATA, TreeNode, TreeNodeHasChildren, TreeNodeTransformer} from './mat-tree.model';
 import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material';
 
 @Component({
-  selector: 'app-mat-tree-test',
-  templateUrl: './mat-tree-test.component.html',
-  styleUrls: ['./mat-tree-test.component.css']
+  selector: 'app-mat-tree',
+  templateUrl: './mat-tree.component.html',
+  styleUrls: ['./mat-tree.component.css']
 })
-export class MatTreeTestComponent implements OnInit {
+export class MatTreeComponent implements OnInit {
 
   public treeControl: FlatTreeControl<FlatTreeNode>;
   public treeFlattener: MatTreeFlattener<TreeNode, FlatTreeNode>;

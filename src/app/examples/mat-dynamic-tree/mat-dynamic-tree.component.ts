@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import {DynamicDatabase, DynamicDataSource, DynamicFlatNode} from './tree-data';
+import {DynamicDatabase, DynamicDataSource, DynamicFlatNode} from './mat-dynamic-tree.model';
 import {FlatTreeControl} from '@angular/cdk/tree';
 
 @Component({
-  selector: 'app-mat-dynamic-tree-test',
-  templateUrl: './mat-dynamic-tree-test.component.html',
-  styleUrls: ['./mat-dynamic-tree-test.component.css']
+  selector: 'app-mat-dynamic-tree',
+  templateUrl: './mat-dynamic-tree.component.html',
+  styleUrls: ['./mat-dynamic-tree.component.css']
 })
-export class MatDynamicTreeTestComponent implements OnInit {
+export class MatDynamicTreeComponent implements OnInit {
 
   constructor(database: DynamicDatabase) {
     this.treeControl = new FlatTreeControl<DynamicFlatNode>(this.getLevel, this.isExpandable);

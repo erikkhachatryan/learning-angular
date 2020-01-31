@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MatDynamicTreeTestComponent } from './mat-dynamic-tree-test.component';
+import { MatTreeComponent } from './mat-tree.component';
 
-describe('MatDynamicTreeTestComponent', () => {
-  let component: MatDynamicTreeTestComponent;
-  let fixture: ComponentFixture<MatDynamicTreeTestComponent>;
+describe('MatTreeTestComponent', () => {
+  let component: MatTreeComponent;
+  let fixture: ComponentFixture<MatTreeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MatDynamicTreeTestComponent ]
+      declarations: [ MatTreeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MatDynamicTreeTestComponent);
+    fixture = TestBed.createComponent(MatTreeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
