@@ -1,1 +1,10 @@
-<button (click)="executeWorker()">Execute worker</button>
+<label>Please input N</label>
+<input matInput [(ngModel)]="n"/>
+<br/>
+<label>With WebWorker?</label>
+<mat-checkbox [(ngModel)]="withWebWorker"></mat-checkbox>
+<br/>
+<button (click)="calcFactorial()">Calculate N!</button>
+<br/>
+<label *ngIf="sum">N! = {{sum}}</label>
+<label>{{errorMessage}}</label>

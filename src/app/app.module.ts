@@ -6,6 +6,8 @@ import {FormsModule} from '@angular/forms';
 import {MatDynamicTreeModule} from './examples/mat-dynamic-tree/mat-dynamic-tree.module';
 import {MatTreeModule} from './examples/mat-tree/mat-tree.module';
 import {WebWorkerModule} from './examples/web-worker/web-worker.module';
+import {WorkerAppModule} from '@angular/platform-webworker';
+import {InlineWorkerModule} from "./examples/inline-worker/inline-worker.module";
 
 
 @NgModule({
@@ -18,6 +20,7 @@ import {WebWorkerModule} from './examples/web-worker/web-worker.module';
     MatTreeModule,
     MatDynamicTreeModule,
     WebWorkerModule,
+    InlineWorkerModule,
   ],
   providers: [
   ],
