@@ -8,6 +8,7 @@ import {MatTreeModule} from './examples/mat-tree/mat-tree.module';
 import {WebWorkerModule} from './examples/web-worker/web-worker.module';
 import {WorkerAppModule} from '@angular/platform-webworker';
 import {InlineWorkerModule} from "./examples/inline-worker/inline-worker.module";
+import {DoCheckModule} from './examples/do-check/do-check.module';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import {InlineWorkerModule} from "./examples/inline-worker/inline-worker.module"
     MatDynamicTreeModule,
     WebWorkerModule,
     InlineWorkerModule,
+    DoCheckModule,
   ],
   providers: [
   ],

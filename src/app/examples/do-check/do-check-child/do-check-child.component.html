@@ -1,0 +1,13 @@
+<div>
+  <p>CHILD</p>
+  <p>data.status {{data.status}}</p>
+  <div>
+    <input style="width: 50%;" [(ngModel)]="value">
+  </div>
+  <p>{{value}}</p>
+  <div>
+    <button mat-button (click)="refresh()">Refresh</button>
+    <button mat-button (click)="changeValue()">Change Value</button>
+    <button mat-button (click)="changeValueAsync()">Change Value Async</button>
+  </div>
+</div>
